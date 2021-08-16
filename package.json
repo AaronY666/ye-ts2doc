@@ -1,0 +1,19 @@
+{
+    "name": "ye-ts2doc",
+    "version": "1.0.0",
+    "description": "transform ts to api doc",
+    "main": "index.ts",
+    "scripts": {},
+    "bin": {
+        "ts2doc": "bin/ts2doc.js"
+    },
+    "author": "aaron",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/helper-plugin-utils": "^7.14.5",
+        "@babel/parser": "^7.15.3",
+        "doctrine": "^3.0.0",
+        "fs-extra": "^10.0.0"
+    }
+}
