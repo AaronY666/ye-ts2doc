@@ -1,6 +1,6 @@
 {
     "name": "ye-ts2doc",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "transform ts to api doc",
     "main": "index.ts",
     "scripts": {},
