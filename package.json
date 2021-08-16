@@ -15,5 +15,9 @@
         "@babel/parser": "^7.15.3",
         "doctrine": "^3.0.0",
         "fs-extra": "^10.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AaronY666/ye-ts2doc/tree/master"
     }
 }
