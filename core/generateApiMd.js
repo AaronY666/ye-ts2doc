@@ -27,7 +27,7 @@ module.exports = function getApiMd(option) {
         }
 
         const result = getJson(absPath, option);
-        const markdownStr = getMdStr(result);
+        const markdownStr = getMdStr(result, option);
 
         //添加到结果中去
         if (markdownStr) {

@@ -3,3 +3,6 @@
 /*.ts
 /*.config.js
 /.vscode
+/testFiles
+/methods.md
+/props.md
