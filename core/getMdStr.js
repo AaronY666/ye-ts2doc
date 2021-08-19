@@ -15,7 +15,7 @@ function handleProps(mdStr, props) {
             type,
             defaultValue,
             comment,
-            readOnly
+            readonly
         } = propItem;
 
         const { description } = comment;
@@ -26,8 +26,8 @@ function handleProps(mdStr, props) {
             propStr += `- **Default:** \`${defaultValue}\`\n`;
         }
 
-        if (readOnly) {
-            propStr += `- **ReadOnly:** \`true\`\n`;
+        if (readonly) {
+            propStr += `- **Readonly:** \`true\`\n`;
         }
 
         mdStr += propStr;

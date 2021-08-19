@@ -1,5 +1,14 @@
 const doctrine = require("doctrine");
 
+function getFunctionName(path) {
+    const fnType = path.node.type;
+    if (fnType === "FunctionDeclaration") {
+        return path.get("id").toString();
+    } else {
+        return path.get("key").toString();
+    }
+}
+
 function getParams(path) {
     const params = path.get("params").map((p) => {
         let defaultValue;
@@ -36,7 +45,7 @@ function getLeadingComments(path) {
 function getReturnType(path) {
     const returnNode = path.get("returnType").node
     if (!returnNode) {
-        return 666;
+        return "";
     }
     const returnType = returnNode.typeAnnotation;
     return getType(returnType, path);
@@ -103,5 +112,6 @@ module.exports = {
     getLeadingComments,
     getReturnType,
     parseComment,
-    getType
+    getType,
+    getFunctionName
 }

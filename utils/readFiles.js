@@ -34,4 +34,5 @@ module.exports = function readFiles(option, callback) {
             callback && callback(absPath, relPath, filename);
         }
     }
+
 }
